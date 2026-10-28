@@ -1,0 +1,159 @@
+﻿== TF version: 2.10.1
+python.exe : 2026-10-28 18:43:53.683079: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2027] TensorFlow was not bu
+ilt with CUDA kernel binaries compatible with compute capability 12.0. CUDA kernels will be jit-compiled from PTX, whic
+h could take 30 minutes or longer.
+所在位置 行:1 字符: 1
++ & 'C:\Users\16231\anaconda3\envs\tf-od\python.exe' -u 'C:\Users\16231 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-10-28 18:4...utes or longer.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+physical device: CPU - /physical_device:CPU:0
+physical device: GPU - /physical_device:GPU:0
+GPU count: 1
+WARNING:tensorflow:From C:\Users\16231\Doubao\chats\2026-10-28\new-chat\gpu_cpu_test.py:19: is_gpu_available (from tens
+orflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+2026-10-28 18:43:53.689289: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized wi
+th oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations
+:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-28 18:43:53.692999: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2027] TensorFlow was not built with CUDA
+ kernel binaries compatible with compute capability 12.0. CUDA kernels will be jit-compiled from PTX, which could take 
+30 minutes or longer.
+2026-10-28 18:43:56.880731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /device:GPU:0 with 
+5363 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 5060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 
+12.0
+is_gpu_available: True
+2026-10-28 18:43:56.888389: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2027] TensorFlow was not built with CUDA
+ kernel binaries compatible with compute capability 12.0. CUDA kernels will be jit-compiled from PTX, which could take 
+30 minutes or longer.
+2026-10-28 18:43:56.888692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1616] Created device /job:localhost/repl
+ica:0/task:0/device:GPU:0 with 5363 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 5060 Laptop GPU, pci bus id: 000
+0:01:00.0, compute capability: 12.0
+input: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+2026-10-28 18:43:56.921716: I tensorflow/core/common_runtime/placer.cc:114] input: (_Arg): /job:localhost/replica:0/tas
+k:0/device:CPU:0
+_EagerConst: (_EagerConst): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:56.922478: I tensorflow/core/common_runtime/placer.cc:114] _EagerConst: (_EagerConst): /job:localhost/
+replica:0/task:0/device:GPU:0
+output_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:56.922683: I tensorflow/core/common_runtime/placer.cc:114] output_RetVal: (_Retval): /job:localhost/re
+plica:0/task:0/device:GPU:0
+2026-10-28 18:43:56.935348: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op _EagerConst in device 
+/job:localhost/replica:0/task:0/device:GPU:0
+input: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:56.993697: I tensorflow/core/common_runtime/placer.cc:114] input: (_Arg): /job:localhost/replica:0/tas
+k:0/device:GPU:0
+_EagerConst: (_EagerConst): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:56.993886: I tensorflow/core/common_runtime/placer.cc:114] _EagerConst: (_EagerConst): /job:localhost/
+replica:0/task:0/device:GPU:0
+output_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:56.994105: I tensorflow/core/common_runtime/placer.cc:114] output_RetVal: (_Retval): /job:localhost/re
+plica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.054595: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op _EagerConst in device 
+/job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.055351: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op _EagerConst in device 
+/job:localhost/replica:0/task:0/device:GPU:0
+shape: (_DeviceArg): /job:localhost/replica:0/task:0/device:CPU:0
+2026-10-28 18:43:57.056628: I tensorflow/core/common_runtime/placer.cc:114] shape: (_DeviceArg): /job:localhost/replica
+:0/task:0/device:CPU:0
+RandomStandardNormal: (RandomStandardNormal): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.056836: I tensorflow/core/common_runtime/placer.cc:114] RandomStandardNormal: (RandomStandardNormal
+): /job:localhost/replica:0/task:0/device:GPU:0
+output_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.057051: I tensorflow/core/common_runtime/placer.cc:114] output_RetVal: (_Retval): /job:localhost/re
+plica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.057609: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op RandomStandardNormal i
+n device /job:localhost/replica:0/task:0/device:GPU:0
+x: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.060635: I tensorflow/core/common_runtime/placer.cc:114] x: (_Arg): /job:localhost/replica:0/task:0/
+device:GPU:0
+y: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.060790: I tensorflow/core/common_runtime/placer.cc:114] y: (_Arg): /job:localhost/replica:0/task:0/
+device:GPU:0
+Mul: (Mul): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.060984: I tensorflow/core/common_runtime/placer.cc:114] Mul: (Mul): /job:localhost/replica:0/task:0
+/device:GPU:0
+z_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.061185: I tensorflow/core/common_runtime/placer.cc:114] z_RetVal: (_Retval): /job:localhost/replica
+:0/task:0/device:GPU:0
+2026-10-28 18:43:57.061871: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op Mul in device /job:loc
+alhost/replica:0/task:0/device:GPU:0
+x: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.071613: I tensorflow/core/common_runtime/placer.cc:114] x: (_Arg): /job:localhost/replica:0/task:0/
+device:GPU:0
+y: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.071895: I tensorflow/core/common_runtime/placer.cc:114] y: (_Arg): /job:localhost/replica:0/task:0/
+device:GPU:0
+AddV2: (AddV2): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.072075: I tensorflow/core/common_runtime/placer.cc:114] AddV2: (AddV2): /job:localhost/replica:0/ta
+sk:0/device:GPU:0
+z_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.072276: I tensorflow/core/common_runtime/placer.cc:114] z_RetVal: (_Retval): /job:localhost/replica
+:0/task:0/device:GPU:0
+2026-10-28 18:43:57.072816: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op AddV2 in device /job:l
+ocalhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.158983: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op _EagerConst in device 
+/job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.159301: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op RandomStandardNormal i
+n device /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.159586: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op Mul in device /job:loc
+alhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.159914: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op AddV2 in device /job:l
+ocalhost/replica:0/task:0/device:GPU:0
+a: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+2026-10-28 18:43:57.161130: I tensorflow/core/common_runtime/placer.cc:114] a: (_Arg): /job:localhost/replica:0/task:0/
+device:CPU:0
+b: (_Arg): /job:localhost/replica:0/task:0/device:CPU:0
+2026-10-28 18:43:57.161312: I tensorflow/core/common_runtime/placer.cc:114] b: (_Arg): /job:localhost/replica:0/task:0/
+device:CPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:CPU:0
+2026-10-28 18:43:57.161447: I tensorflow/core/common_runtime/placer.cc:114] MatMul: (MatMul): /job:localhost/replica:0/
+task:0/device:CPU:0
+product_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:CPU:0
+2026-10-28 18:43:57.161610: I tensorflow/core/common_runtime/placer.cc:114] product_RetVal: (_Retval): /job:localhost/r
+eplica:0/task:0/device:CPU:0
+2026-10-28 18:43:57.171410: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op MatMul in device /job:
+localhost/replica:0/task:0/device:CPU:0
+RESULT CPU matmul 2048x2048 time: 0.068 s
+2026-10-28 18:43:57.228135: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op _EagerConst in device 
+/job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.228439: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op RandomStandardNormal i
+n device /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.228745: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op Mul in device /job:loc
+alhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.229009: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op AddV2 in device /job:l
+ocalhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.229273: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op _EagerConst in device 
+/job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.229484: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op RandomStandardNormal i
+n device /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.229709: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op Mul in device /job:loc
+alhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.229925: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op AddV2 in device /job:l
+ocalhost/replica:0/task:0/device:GPU:0
+a: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.230419: I tensorflow/core/common_runtime/placer.cc:114] a: (_Arg): /job:localhost/replica:0/task:0/
+device:GPU:0
+b: (_Arg): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.230570: I tensorflow/core/common_runtime/placer.cc:114] b: (_Arg): /job:localhost/replica:0/task:0/
+device:GPU:0
+MatMul: (MatMul): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.230735: I tensorflow/core/common_runtime/placer.cc:114] MatMul: (MatMul): /job:localhost/replica:0/
+task:0/device:GPU:0
+product_RetVal: (_Retval): /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.231107: I tensorflow/core/common_runtime/placer.cc:114] product_RetVal: (_Retval): /job:localhost/r
+eplica:0/task:0/device:GPU:0
+2026-10-28 18:43:57.231712: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op MatMul in device /job:
+localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:44:06.747952: I tensorflow/stream_executor/cuda/cuda_blas.cc:1614] TensorFloat-32 will be used for the ma
+trix multiplication. This will only be logged once.
+RESULT GPU small matmul 256x256 time: 9.526 s
+RESULT small matmul op device: /job:localhost/replica:0/task:0/device:GPU:0
+2026-10-28 18:44:06.753777: I tensorflow/core/common_runtime/eager/execute.cc:1423] Executing op MatMul in device /job:
+localhost/replica:0/task:0/device:GPU:0
+RESULT GPU matmul 2048x2048 time: 0.047 s
+RESULT large matmul op device: /job:localhost/replica:0/task:0/device:GPU:0
+== TEST DONE ==

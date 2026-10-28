@@ -1,0 +1,1 @@
+/home/devcontainers/miniconda3/envs/tf2/bin/python --version > /tmp/pyver.txt 2>&1; cat /tmp/pyver.txt; echo SEP1; /home/devcontainers/miniconda3/envs/tf2/bin/python /mnt/c/Users/16231/Doubao/chats/2026-10-28/new-chat/gpu_check.py > /tmp/gpu.txt 2>&1; echo SEP2; cat /tmp/gpu.txt; echo RC=$?

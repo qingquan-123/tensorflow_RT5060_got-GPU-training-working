@@ -1,0 +1,31 @@
+﻿== TF version: 2.10.1
+GPU devices: ['/physical_device:GPU:0']
+STEP 01 time: 195.621 s
+STEP 02 time: 0.016 s
+STEP 03 time: 0.013 s
+STEP 04 time: 0.012 s
+STEP 05 time: 0.018 s
+STEP 06 time: 0.015 s
+STEP 07 time: 0.015 s
+STEP 08 time: 0.012 s
+STEP 09 time: 0.012 s
+STEP 10 time: 0.011 s
+STEP 11 time: 0.011 s
+STEP 12 time: 0.012 s
+STEP 13 time: 0.011 s
+STEP 14 time: 0.012 s
+STEP 15 time: 0.011 s
+STEP 16 time: 0.010 s
+STEP 17 time: 0.010 s
+STEP 18 time: 0.011 s
+STEP 19 time: 0.011 s
+STEP 20 time: 0.011 s
+== PER_STEP_TIMES == 195.621 0.016 0.013 0.012 0.018 0.015 0.015 0.012 0.012 0.011 0.011 0.012 0.011 0.012 0.011 0.010 0.010 0.011 0.011 0.011
+== SUMMARY ==
+total: 195.854 s
+avg all: 9.793 s
+avg first 5: 39.136 s
+avg last 5: 0.011 s
+slowest: 195.621 s (step 1)
+fastest: 0.010 s (step 17)
+== TEST DONE ==

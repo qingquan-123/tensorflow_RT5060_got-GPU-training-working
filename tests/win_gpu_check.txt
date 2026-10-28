@@ -1,0 +1,19 @@
+﻿python.exe : WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+所在位置 行:1 字符: 306
++ ...  $env:PATH; & "$venv\Scripts\python.exe" -c "import tensorflow as tf; ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: All lo...itten to STDERR:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+I0000 00:00:1793195650.908410    8056 port.cc:153] oneDNN custom operations are on. You may see slightly different nume
+rical results due to floating-point round-off errors from different computation orders. To turn them off, set the envir
+onment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793195652.424404    8056 port.cc:153] oneDNN custom operations are on. You may see slightly different nume
+rical results due to floating-point round-off errors from different computation orders. To turn them off, set the envir
+onment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+TF 2.21.0
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN
+ are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+GPU_COUNT 0
+[]

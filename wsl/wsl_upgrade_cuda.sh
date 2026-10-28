@@ -1,0 +1,1 @@
+/home/devcontainers/miniconda3/envs/tf2/bin/pip install -U nvidia-cuda-nvcc-cu12 nvidia-cuda-runtime-cu12 nvidia-cublas-cu12 nvidia-cudnn-cu12 nvidia-cufft-cu12 nvidia-curand-cu12 nvidia-cusolver-cu12 nvidia-cusparse-cu12 nvidia-nvjitlink-cu12 2>&1 | grep -E "Successfully installed|ERROR|error:" | tail -6; echo INSTALL_DONE

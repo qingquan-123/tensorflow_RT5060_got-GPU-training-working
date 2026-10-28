@@ -1,0 +1,69 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793196893.028823     626 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1793196893.683684     626 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/google/api_core/_python_version_support.py:254: FutureWarning: You are using a Python version (3.11.18) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793196896.936793     626 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+/home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow_io/python/ops/__init__.py:98: UserWarning: unable to load libtensorflow_io_plugins.so: unable to open file: libtensorflow_io_plugins.so, from paths: ['/home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow_io/python/ops/libtensorflow_io_plugins.so']
+caused by: ['/home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow_io/python/ops/libtensorflow_io_plugins.so: undefined symbol: _ZN3tsl5mutex6unlockEv']
+  warnings.warn(f"unable to load libtensorflow_io_plugins.so: {e}")
+/home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow_io/python/ops/__init__.py:104: UserWarning: file system plugins are not loaded: unable to open file: libtensorflow_io.so, from paths: ['/home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow_io/python/ops/libtensorflow_io.so']
+caused by: ['/home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow_io/python/ops/libtensorflow_io.so: undefined symbol: _ZNK10tensorflow4data11DatasetBase8FinalizeEPNS_15OpKernelContextESt8functionIFN4absl12lts_202308028StatusOrIN3tsl4core11RefCountPtrIS1_EEEEvEE']
+  warnings.warn(f"file system plugins are not loaded: {e}")
+W0000 00:00:1793196900.679274     626 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+W0000 00:00:1793196900.685307     626 gpu_device.cc:2459] TensorFlow was not built with CUDA kernel binaries compatible with compute capability 12.0a. CUDA kernels will be jit-compiled from PTX, which could take 30 minutes or longer.
+I0000 00:00:1793196900.882915     626 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 5233 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 5060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 12.0a
+INFO:tensorflow:Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)
+I1028 22:15:00.890399 135415237769024 mirrored_strategy.py:423] Using MirroredStrategy with devices ('/job:localhost/replica:0/task:0/device:GPU:0',)
+INFO:tensorflow:Maybe overwriting train_steps: 20
+I1028 22:15:01.071990 135415237769024 config_util.py:552] Maybe overwriting train_steps: 20
+INFO:tensorflow:Maybe overwriting use_bfloat16: False
+I1028 22:15:01.072678 135415237769024 config_util.py:552] Maybe overwriting use_bfloat16: False
+WARNING:tensorflow:From /home/devcontainers/od/object_detection/model_lib_v2.py:563: StrategyBase.experimental_distribute_datasets_from_function (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
+Instructions for updating:
+rename to distribute_datasets_from_function
+W1028 22:15:01.076800 135415237769024 deprecation.py:50] From /home/devcontainers/od/object_detection/model_lib_v2.py:563: StrategyBase.experimental_distribute_datasets_from_function (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
+Instructions for updating:
+rename to distribute_datasets_from_function
+INFO:tensorflow:Reading unweighted datasets: ['/home/devcontainers/od_train/train.record']
+I1028 22:15:01.096514 135415237769024 dataset_builder.py:162] Reading unweighted datasets: ['/home/devcontainers/od_train/train.record']
+INFO:tensorflow:Reading record datasets for input file: ['/home/devcontainers/od_train/train.record']
+I1028 22:15:01.097315 135415237769024 dataset_builder.py:79] Reading record datasets for input file: ['/home/devcontainers/od_train/train.record']
+INFO:tensorflow:Number of filenames to read: 1
+I1028 22:15:01.097842 135415237769024 dataset_builder.py:80] Number of filenames to read: 1
+WARNING:tensorflow:num_readers has been reduced to 1 to match input file shards.
+W1028 22:15:01.098179 135415237769024 dataset_builder.py:86] num_readers has been reduced to 1 to match input file shards.
+WARNING:tensorflow:From /home/devcontainers/od/object_detection/builders/dataset_builder.py:100: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.deterministic`.
+W1028 22:15:01.105417 135415237769024 deprecation.py:50] From /home/devcontainers/od/object_detection/builders/dataset_builder.py:100: parallel_interleave (from tensorflow.python.data.experimental.ops.interleave_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.interleave(map_func, cycle_length, block_length, num_parallel_calls=tf.data.AUTOTUNE)` instead. If sloppy execution is desired, use `tf.data.Options.deterministic`.
+WARNING:tensorflow:From /home/devcontainers/od/object_detection/builders/dataset_builder.py:235: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map()
+W1028 22:15:01.117825 135415237769024 deprecation.py:50] From /home/devcontainers/od/object_detection/builders/dataset_builder.py:235: DatasetV1.map_with_legacy_function (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map()
+WARNING:tensorflow:From /home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow/python/util/dispatch.py:1264: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+W1028 22:15:04.793809 135415237769024 deprecation.py:50] From /home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow/python/util/dispatch.py:1264: sparse_to_dense (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Create a `tf.sparse.SparseTensor` and use `tf.sparse.to_dense` instead.
+WARNING:tensorflow:From /home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow/python/util/dispatch.py:1264: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W1028 22:15:07.596223 135415237769024 deprecation.py:50] From /home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow/python/util/dispatch.py:1264: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+WARNING:tensorflow:From /home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow/python/util/dispatch.py:1264: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W1028 22:15:08.487144 135415237769024 deprecation.py:50] From /home/devcontainers/miniconda3/envs/tf2/lib/python3.11/site-packages/tensorflow/python/util/dispatch.py:1264: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+I0000 00:00:1793196909.704147     626 generator_dataset_op.cc:213] Memory patch applied: M_TRIM_THRESHOLD=128 kb was set.
+I0000 00:00:1793196909.742297     831 tf_record_dataset_op.cc:396] The default buffer size is 262144, which is overridden by the user specified `buffer_size` of 8000000
