@@ -87,4 +87,3 @@ python /mnt/e/Object-Detection-Tensorflow/models-master/research/object_detectio
 ## 说明
 
 - 完整操作记录见桌面 `日志.txt`（时间线、失败回退、清理记录）。
-- E 盘原项目 `E:\Object-Detection-Tensorflow` 全程未修改。
